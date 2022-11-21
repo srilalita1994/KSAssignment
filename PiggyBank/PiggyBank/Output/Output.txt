@@ -1,0 +1,131 @@
+"C:\Program Files (x86)\Java\jdk1.8.0_202\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\lib\idea_rt.jar=58741:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\deploy.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-32.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\javaws.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\jfxswt.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\management-agent.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\plugin.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\workspace\Krian\Digital Piggy Bank\PiggyBank\PiggyBank\target\classes" DigitalBank
+DEPOSIT has just deposited:100.0
+Current account balance:100.0
+Enter max. number of Withdraw: N =  
+3
+WITHDRAW_2 has just withdrawn 10.0
+Current account balance :90.0
+DEPOSIT  has just deposited : 400.0
+Current account balance : 490.0
+WITHDRAW_3 has just withdrawn 10.0
+Current account balance :480.0
+DEPOSIT  has just deposited : 700.0
+Current account balance : 1180.0
+WITHDRAW_2 has just withdrawn 30.0
+Current account balance :1150.0
+WITHDRAW_1 has just withdrawn 80.0
+Current account balance :1070.0
+WITHDRAW_2 has just withdrawn 70.0
+Current account balance :1000.0
+DEPOSIT  has just deposited : 800.0
+Current account balance : 1800.0
+DEPOSIT  has just deposited : 200.0
+Current account balance : 2000.0
+WITHDRAW_3 has just withdrawn 30.0
+Current account balance :1970.0
+DEPOSIT  has just deposited : 300.0
+Current account balance : 2270.0
+WITHDRAW_2 has just withdrawn 40.0
+Current account balance :2230.0
+WITHDRAW_1 has just withdrawn 70.0
+Current account balance :2160.0
+WITHDRAW_2 has just withdrawn 40.0
+Current account balance :2120.0
+DEPOSIT  has just deposited : 900.0
+Current account balance : 3020.0
+DEPOSIT  has just deposited : 300.0
+Current account balance : 3320.0
+WITHDRAW_3 has just withdrawn 70.0
+Current account balance :3250.0
+DEPOSIT  has just deposited : 600.0
+Current account balance : 3850.0
+WITHDRAW_2 has just withdrawn 20.0
+Current account balance :3830.0
+WITHDRAW_2 has just withdrawn 80.0
+Current account balance :3750.0
+WITHDRAW_2 has just withdrawn 70.0
+Current account balance :3680.0
+WITHDRAW_2 has just withdrawn 50.0
+Current account balance :3630.0
+WITHDRAW_2 has just withdrawn 30.0
+Current account balance :3600.0
+WITHDRAW_2 has just withdrawn 30.0
+Current account balance :3570.0
+WITHDRAW_2 has just withdrawn 30.0
+Current account balance :3540.0
+WITHDRAW_2 has just withdrawn 50.0
+Current account balance :3490.0
+WITHDRAW_2 has just withdrawn 10.0
+Current account balance :3480.0
+WITHDRAW_1 has just withdrawn 10.0
+Current account balance :3470.0
+WITHDRAW_2 has just withdrawn 30.0
+Current account balance :3440.0
+DEPOSIT  has just deposited : 200.0
+Current account balance : 3640.0
+WITHDRAW_3 has just withdrawn 90.0
+Current account balance :3550.0
+DEPOSIT  has just deposited : 200.0
+Current account balance : 3750.0
+WITHDRAW_1 has just withdrawn 80.0
+Current account balance :3670.0
+DEPOSIT  has just deposited : 800.0
+Current account balance : 4470.0
+WITHDRAW_3 has just withdrawn 10.0
+Current account balance :4460.0
+DEPOSIT  has just deposited : 300.0
+Current account balance : 4760.0
+WITHDRAW_1 has just withdrawn 90.0
+Current account balance :4670.0
+DEPOSIT  has just deposited : 500.0
+Current account balance : 5170.0
+WITHDRAW_3 has just withdrawn 80.0
+Current account balance :5090.0
+DEPOSIT  has just deposited : 300.0
+Current account balance : 5390.0
+DEPOSIT  has just deposited : 700.0
+Current account balance : 6090.0
+WITHDRAW_1 has just withdrawn 80.0
+Current account balance :6010.0
+WITHDRAW_3 has just withdrawn 60.0
+Banker DEPOSIT has exited 
+Current account balance :5950.0
+WITHDRAW_1 has just withdrawn 50.0
+Current account balance :5900.0
+WITHDRAW_3 has just withdrawn 80.0
+Current account balance :5820.0
+WITHDRAW_3 has just withdrawn 60.0
+Current account balance :5760.0
+WITHDRAW_3 has just withdrawn 60.0
+Current account balance :5700.0
+WITHDRAW_1 has just withdrawn 90.0
+Current account balance :5610.0
+WITHDRAW_3 has just withdrawn 60.0
+Current account balance :5550.0
+WITHDRAW_1 has just withdrawn 40.0
+Current account balance :5510.0
+WITHDRAW_3 has just withdrawn 60.0
+Current account balance :5450.0
+WITHDRAW_1 has just withdrawn 60.0
+Current account balance :5390.0
+WITHDRAW_3 has just withdrawn 70.0
+Current account balance :5320.0
+WITHDRAW_1 has just withdrawn 80.0
+Current account balance :5240.0
+WITHDRAW_3 has just withdrawn 80.0
+Current account balance :5160.0
+WITHDRAW_1 has just withdrawn 10.0
+Current account balance :5150.0
+WITHDRAW_3 has just withdrawn 60.0
+Current account balance :5090.0
+WITHDRAW_1 has just withdrawn 30.0
+Current account balance :5060.0
+WITHDRAW_1 has just withdrawn 50.0
+Current account balance :5010.0
+WITHDRAW_1 has just withdrawn 50.0
+Current account balance :4960.0
+Banker WITHDRAW_1 has exited 
+Banker WITHDRAW_2 has exited 
+Banker WITHDRAW_3 has exited 
+Closing balance : 4960.0
+Process finished with exit code 0
