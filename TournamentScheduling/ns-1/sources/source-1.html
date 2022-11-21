@@ -1,0 +1,175 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > ScheduleMatch</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">&lt;empty package name&gt;</a>
+</div>
+
+<h1>Coverage Summary for Class: ScheduleMatch (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ScheduleMatch</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (3/4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    80%
+  </span>
+  <span class="absValue">
+    (24/30)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;import org.json.JSONObject;
+&nbsp;import java.io.FileWriter;
+&nbsp;import java.io.IOException;
+&nbsp;import java.util.ArrayList;
+&nbsp;import java.util.List;
+<b class="fc">&nbsp;public class ScheduleMatch {</b>
+<b class="fc">&nbsp;    List&lt;JSONObject&gt; jsonList = new ArrayList&lt;&gt;();</b>
+<b class="fc">&nbsp;    int teamMatches = 0;</b>
+<b class="fc">&nbsp;    int totalMatch = 0;</b>
+&nbsp;
+&nbsp;    /**
+&nbsp;     *totalMatchConduct method: calculates total number of matches to be conducted
+&nbsp;     * @param  teamNum: integer &gt;= 3 as input
+&nbsp;     * @return totalMatch
+&nbsp;     */
+&nbsp;    public int totalMatchConduct(int teamNum) {
+<b class="fc">&nbsp;        if(teamNum&gt;=3){</b>
+<b class="fc">&nbsp;            teamMatches = (teamNum * (teamNum-1)) / 2;</b>
+<b class="fc">&nbsp;            totalMatch = teamMatches * 2;</b>
+<b class="fc">&nbsp;            System.out.println(&quot;Number of Matches Scheduled: &quot; + totalMatch);</b>
+&nbsp;        } else {
+<b class="fc">&nbsp;            System.out.println(&quot;Match will be scheduled only if No of Teams &gt;= 3&quot;);</b>
+&nbsp;        }
+<b class="fc">&nbsp;        return totalMatch;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * matchSchedule method: creates list of matches
+&nbsp;     * @param teamNum : integer &gt;= 3 as input
+&nbsp;     * @return jsonList
+&nbsp;     */
+&nbsp;
+&nbsp;    public List&lt;JSONObject&gt; matchSchedule(int teamNum) {
+<b class="fc">&nbsp;        int matchNum = 1; //numbering of matches(as Match_1)</b>
+<b class="fc">&nbsp;        for (int playTwice = 0; playTwice &lt; 2; playTwice++) { // Since each team plays twice</b>
+<b class="fc">&nbsp;            for (int valA = 1; valA &lt;= teamNum; valA++) { // team A values</b>
+<b class="fc">&nbsp;                for (int valB = 1; valB &lt;= teamNum; valB++) { // team B values</b>
+<b class="fc">&nbsp;                    if ((valA &lt; valB)) {</b>
+<b class="fc">&nbsp;                        JSONObject mainMatch = new JSONObject();</b>
+<b class="fc">&nbsp;                        JSONObject team = new JSONObject();</b>
+<b class="fc">&nbsp;                        team.put(&quot;A&quot;, &quot;Team_&quot; + valA);</b>
+<b class="fc">&nbsp;                        team.put(&quot;B&quot;, &quot;Team_&quot; + valB);</b>
+<b class="fc">&nbsp;                        mainMatch.put(&quot;Match_&quot; + matchNum, team);</b>
+<b class="fc">&nbsp;                        jsonList.add(mainMatch);</b>
+&nbsp;                        //System.out.println(mainMatch);
+<b class="fc">&nbsp;                        matchNum++;</b>
+&nbsp;                    }
+&nbsp;                }
+&nbsp;            }
+&nbsp;        }
+<b class="fc">&nbsp;        System.out.println(jsonList);</b>
+<b class="fc">&nbsp;        return jsonList;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * matchScheduleJsonFileCreator method: creates JSON file from JSON list
+&nbsp;     * @param jsonList : list of matches scheduled
+&nbsp;     * @param matchScheduleJsonFile : generated JSON file name = &quot;jsonOwnMatches.json&quot;
+&nbsp;     */
+&nbsp;    public void matchScheduleJsonFileCreator(List&lt;JSONObject&gt; jsonList, String matchScheduleJsonFile) {
+&nbsp;        // Write the content in file
+<b class="nc">&nbsp;        try(FileWriter fileWriter = new FileWriter(matchScheduleJsonFile)) {</b>
+<b class="nc">&nbsp;            String fileContent = jsonList.toString();</b>
+<b class="nc">&nbsp;            fileWriter.write(fileContent);</b>
+<b class="nc">&nbsp;        } catch (IOException e) {</b>
+<b class="nc">&nbsp;            System.out.println(&quot;Exception handled&quot;);</b>
+<b class="nc">&nbsp;        }</b>
+&nbsp;    }
+&nbsp;}
+&nbsp;
+&nbsp;
+&nbsp;
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-11-21 04:07</div>
+</div>
+</body>
+</html>
